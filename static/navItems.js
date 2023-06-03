@@ -12,33 +12,41 @@ export const navItems = [
   {
     title: 'Assets',
     icon: <AiOutlinePieChart />,
+    href: '/',
   },
   {
     title: 'Trade',
     icon: <BiTrendingUp />,
+    href: '/',
   },
   {
     title: 'Pay',
     icon: <RiCoinsLine />,
+    href: '/',
   },
   {
     title: 'For You',
     icon: <MdWeb />,
+    href: '/',
   },
   {
     title: 'Learn and earn',
     icon: <AiOutlinePlusCircle />,
+    href: 'https://coinmarketcap.com/alexandria',
   },
   {
     title: 'Notifications',
     icon: <RiNotification3Line />,
+    href: '/',
   },
   {
     title: 'Invite Friends',
     icon: <BsPersonPlus />,
+    href: '/',
   },
   {
     title: 'Send a gift',
     icon: <AiOutlineGift />,
+    href: '/',
   },
 ]

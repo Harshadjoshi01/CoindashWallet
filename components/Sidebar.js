@@ -2,6 +2,7 @@ import { useState } from 'react'
 import styled from 'styled-components'
 import CoinbaseLogo from '../assets/cb-logo.png'
 import Image from 'next/image'
+import Link from 'next/link'
 
 import { navItems } from '../static/navItems'
 
@@ -17,12 +18,14 @@ const Sidebar = () => {
       </LogoContainer>
       <NavItemsContainer>
         {navItems.map(item => (
+          <Link href={item.href}>
           <NavItem key={item.title} onClick={() => setActiveIcon(item.title)}>
             <NavIcon style={{ color: item.title === activeIcon && '#3773f5' }}>
               {item.icon}
             </NavIcon>
             <NavTitle>{item.title}</NavTitle>
           </NavItem>
+          </Link>
         ))}
       </NavItemsContainer>
     </Wrapper>
